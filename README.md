@@ -1,4 +1,10 @@
-This is your new Play application
+Microservice application
 =================================
 
-This file will be packaged with your application, when using `activator dist`.
+# To run
+To run a single module / service
+```
+frontend/run
+```
+
+# to deploy
