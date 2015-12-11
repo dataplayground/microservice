@@ -4,10 +4,10 @@ organization := "de.geoheil"
 
 version := "0.1"
 
-lazy val `spark-microservices` = (project in file(".")).aggregate(frontend)
+lazy val `spark-microservices` = (project in file(".")).aggregate(frontend, backend)
 
 lazy val frontend = (project in file("services/frontend")).enablePlugins(PlayScala)
-//lazy val  backend = (project in file("services/backend"))
+lazy val  backend = (project in file("services/backend"))
 
 //TODO there must be a better way to fix this
 //mainClass in `spark-microservices` := (mainClass in "services/frontend" in Compile).value
