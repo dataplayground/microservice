@@ -11,6 +11,6 @@ object Build extends Build with Settings with Dependencies {
     .settings(projectSettings ++ commonDeps)
 
   //TODO: this does not work
-  mainClass := Some("com.example.ApplicationMain")
+//  mainClass := Some("com.example.ApplicationMain")
 
 }
